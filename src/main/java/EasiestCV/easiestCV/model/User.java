@@ -29,8 +29,8 @@ public class User {
     @Column(name = "pdf", nullable = true)
     private String pdf;
 
-    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
-    private List<Tab> tabs = new ArrayList<>();
+//    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
+//    private List<Tab> tabs = new ArrayList<>();
 
     public User() {}
 
@@ -82,11 +82,11 @@ public class User {
         this.pdf = pdf;
     }
 
-    public List<Tab> getTabs() {
-        return tabs;
-    }
-
-    public void setTabs(List<Tab> tabs) {
-        this.tabs = tabs;
-    }
+//    public List<Tab> getTabs() {
+//        return tabs;
+//    }
+//
+//    public void setTabs(List<Tab> tabs) {
+//        this.tabs = tabs;
+//    }
 }
