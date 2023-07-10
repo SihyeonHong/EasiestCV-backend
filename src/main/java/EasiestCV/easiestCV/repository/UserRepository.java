@@ -8,6 +8,7 @@ import java.util.Optional;
 
 @Repository
 public interface UserRepository extends JpaRepository<User, String> {
+    boolean existsById(String userId);
     Optional<User> findByUserid(String userId); // JPA 자동생성
 }
 
